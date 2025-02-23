@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Nerdle Clone</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Nerdle Clone</h1>
+  <div id="info">
+    Adivina la ecuación de <strong>8 caracteres</strong> en 6 intentos. Debe incluir "=" y ser matemáticamente válida.
+  </div>
+
+  <div id="game-container">
+    <!-- Grid: 6 filas x 8 columnas -->
+    <div id="board"></div>
+    
+    <!-- Mensaje de estado -->
+    <div id="message"></div>
+    
+    <!-- Teclado virtual en 3 filas -->
+    <div id="keyboard-container">
+      <div class="keyboard-row" id="keyboard-numbers"></div>
+      <div class="keyboard-row" id="keyboard-operators"></div>
+      <div class="keyboard-row" id="keyboard-special"></div>
+    </div>
+    
+    <!-- Controles: Modo y Reiniciar -->
+    <div id="controls">
+      <button id="toggle-mode">Modo Normal</button>
+      <button id="restart-game">Reiniciar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
